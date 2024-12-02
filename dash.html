@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="dash()">
+  <nav>
+    <ul type="none">
+      <li onclick="dash1()">Dashboard</li>
+      <li onclick="insert()">Insert</li>
+      <li onclick="return run()">Table</li>
+    </ul>
+  </nav>
+  <div id="card">
+    <img src="./car.jpg" alt="" width="300px" height="300px">
+    <img src="./2.jpg" alt="" width="300px" height="300px">
+    <img src="./3.jpg" alt="" width="300px" height="300px">
+    <img src="./4.jpg" alt="" width="300px" height="300px">
+    <img src="./6.webp" alt="" width="300px" height="300px">
+    <img src="./5.jpg" alt="" width="300px" height="300px">
+  </div>
+  <div id="form">
+    <label for="">Brand</label>
+    <input type="text" placeholder="enter brand name here" id="brand">
+    <label for="">Name</label>
+    <input type="text" placeholder="enter car name" id="name">
+    <label for="">Price(in Cr)</label>
+    <input type="text" placeholder="enter Price here" id="price">
+   
+    <button onclick=" return add()">Insert</button>
+  </div>
+  <table border="">
+    <thead>
+      <th>ID</th>
+      <th>Brand</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </thead>
+    <tbody id="table">
+
+    </tbody>
+  </table>
+  <div id="edit"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
